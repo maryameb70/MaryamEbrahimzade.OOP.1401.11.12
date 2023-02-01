@@ -47,28 +47,28 @@ public class Main {
         System.out.println("Area:" + circle.getArea());
         System.out.println("perimeter:" + circle.getPerimeter());
         System.out.println("-----Circle/Without default constructor-----");
-        Circle circle1 = new Circle(5.0);
-        System.out.println("Area:" + circle1.getArea());
-        System.out.println("perimeter:" + circle1.getPerimeter());
-        System.out.println(circle1);
+        circle = new Circle(5.0);
+        System.out.println("Area:" + circle.getArea());
+        System.out.println("perimeter:" + circle.getPerimeter());
+        System.out.println(circle);
         System.out.println("-----Rectangle/With default constructor-----");
         Rectangle rectangle = new Rectangle();
         System.out.println("Area:" + rectangle.getArea());
         System.out.println("perimeter:" + rectangle.getPerimeter());
         System.out.println("-----Rectangle/Without default constructor-----");
-        Rectangle rectangle1 = new Rectangle(6.0, 8.0);
-        System.out.println("Area:" + rectangle1.getArea());
-        System.out.println("perimeter:" + rectangle1.getPerimeter());
-        System.out.println(circle1);
+        rectangle = new Rectangle(6.0, 8.0);
+        System.out.println("Area:" + rectangle.getArea());
+        System.out.println("perimeter:" + rectangle.getPerimeter());
+        System.out.println(rectangle.toString());
         System.out.println("-----Square/With default constructor-----");
         Shape square = new Square();
         System.out.println("Area:" + square.getArea());
         System.out.println("perimeter:" + square.getPerimeter());
         System.out.println("-----Square/Without default constructor-----");
         try {
-            Shape square1 = new Square(5.0d, 6.0d);
-            System.out.println("Area:" + square1.getArea());
-            System.out.println("perimeter:" + square1.getPerimeter());
+            square = new Square(5.0d, 6.0d);
+            System.out.println("Area:" + square.getArea());
+            System.out.println("perimeter:" + square.getPerimeter());
         } catch (InvalidInputException e) {
             e.printStackTrace();
         }
