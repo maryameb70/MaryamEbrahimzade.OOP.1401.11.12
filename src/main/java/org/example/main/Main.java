@@ -4,7 +4,7 @@ import org.example.shape.Circle;
 import org.example.shape.Rectangle;
 import org.example.shape.Shape;
 import org.example.shape.Square;
-import org.example.shape.InvalidInputException;
+
 public class Main {
     public static void main(String[] args) {
         //practice1
