@@ -1,9 +1,6 @@
 package org.example.main;
 
-import org.example.shape.Circle;
-import org.example.shape.Rectangle;
-import org.example.shape.Shape;
-import org.example.shape.Square;
+import org.example.shape.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +32,7 @@ public class Main {
             public Double getArea() {
                 return null;
             }
+
             @Override
             public Double getPerimeter() {
                 return null;
@@ -58,20 +56,21 @@ public class Main {
         System.out.println("Area:" + rectangle.getArea());
         System.out.println("perimeter:" + rectangle.getPerimeter());
         System.out.println("-----Rectangle/Without default constructor-----");
-        Rectangle rectangle1 = new Rectangle(6.0,8.0);
+        Rectangle rectangle1 = new Rectangle(6.0, 8.0);
         System.out.println("Area:" + rectangle1.getArea());
         System.out.println("perimeter:" + rectangle1.getPerimeter());
         System.out.println(circle1);
         System.out.println("-----Square/With default constructor-----");
         Shape square = new Square();
-        System.out.println("Area:" +square.getArea());
-        System.out.println("perimeter:"+square.getPerimeter());
+        System.out.println("Area:" + square.getArea());
+        System.out.println("perimeter:" + square.getPerimeter());
         System.out.println("-----Square/Without default constructor-----");
-        Shape square1 = new Square(5.0d);
-        System.out.println("Area:"+square1.getArea());
-        System.out.println("perimeter:"+square1.getPerimeter());
-
-
-
+        try {
+            Shape square1 = new Square(5.0d, 6.0d);
+            System.out.println("Area:" + square1.getArea());
+            System.out.println("perimeter:" + square1.getPerimeter());
+        } catch (InvalidInputException e) {
+            e.printStackTrace();
+        }
     }
 }
