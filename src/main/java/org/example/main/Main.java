@@ -43,7 +43,7 @@ public class Main {
         //practice2
         System.out.println("--------------------calculate area and perimeter --------------------");
         System.out.println("-----Circle/With default constructor-----");
-        Circle circle = new Circle();
+        Shape circle = new Circle();
         System.out.println("Area:" + circle.getArea());
         System.out.println("perimeter:" + circle.getPerimeter());
         System.out.println("-----Circle/Without default constructor-----");
@@ -52,7 +52,7 @@ public class Main {
         System.out.println("perimeter:" + circle.getPerimeter());
         System.out.println(circle);
         System.out.println("-----Rectangle/With default constructor-----");
-        Rectangle rectangle = new Rectangle();
+        Shape rectangle = new Rectangle();
         System.out.println("Area:" + rectangle.getArea());
         System.out.println("perimeter:" + rectangle.getPerimeter());
         System.out.println("-----Rectangle/Without default constructor-----");
