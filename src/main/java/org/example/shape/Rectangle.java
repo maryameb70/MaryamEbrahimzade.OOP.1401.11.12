@@ -1,6 +1,7 @@
 package org.example.shape;
 
 public class Rectangle extends Shape {
+    // TODO: can use double wrapper class (Double)
     private double width;
     private double length;
 

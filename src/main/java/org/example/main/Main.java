@@ -7,6 +7,7 @@ import org.example.shape.Square;
 import org.example.shape.InvalidInputException;
 public class Main {
     public static void main(String[] args)throws InvalidInputException {
+        // TODO: You can use Shape for all the types of variables you have.
         //practice1
         System.out.println("---Initialization with default constructor---");
         Shape shape = new Shape() {

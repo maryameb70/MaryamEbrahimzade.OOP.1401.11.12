@@ -5,6 +5,7 @@ public class Square extends Rectangle {
         super();
     }
 
+    // TODO: One parameter can be taken from the client and sent to both the with and length the super class.
     public Square(double width, double length) {
         super(width, length);
     }

@@ -2,6 +2,7 @@ package org.example.shape;
 
 public abstract class Shape {
     private String color;
+    // TODO: can use double wrapper class (Double)
     private boolean filled;
 
     public Shape() {

@@ -1,5 +1,6 @@
 package org.example.shape;
 
+// TODO: There seems to be no need for this class exception
 public class InvalidInputException extends Exception{
     public InvalidInputException() {
     }
