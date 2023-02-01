@@ -25,7 +25,6 @@ public class Main {
         System.out.println(shape);
 
         System.out.println("---Initialization with setter and default constructor---");
-        // Shape shape1 = new Shape();
         shape.setColor("Blue");
         shape.setFilled(false);
         System.out.println(shape);
