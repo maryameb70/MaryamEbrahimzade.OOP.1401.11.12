@@ -5,31 +5,21 @@ public class Square extends Rectangle {
         super();
     }
 
-    public Square(double width, double length) {
-        super(width, length);
+    public Square(Double width) {
+        super(width, width);
     }
 
-    public Square(String color, boolean filled, double width, double length) {
+    public Square(String color, Boolean filled, Double width, Double length) {
         super(color, filled, width, length);
     }
 
-    private boolean statesEquality() {
-        return super.getWidth() == super.getLength();
-    }
-
     @Override
-    public Double getArea() throws InvalidInputException {
-        if (!statesEquality()) {
-            throw new InvalidInputException();
-        }
+    public Double getArea() {
         return super.getArea();
     }
 
     @Override
-    public Double getPerimeter() throws InvalidInputException {
-        if (!statesEquality()) {
-            throw new InvalidInputException();
-        }
+    public Double getPerimeter()  {
         return super.getPerimeter();
     }
 }

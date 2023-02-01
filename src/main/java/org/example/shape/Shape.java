@@ -2,14 +2,14 @@ package org.example.shape;
 
 public abstract class Shape {
     private String color;
-    private boolean filled;
+    private Boolean filled;
 
     public Shape() {
         color = "green";
         filled = true;
     }
 
-    public Shape(String color, boolean filled) {
+    public Shape(String color, Boolean filled) {
         this.color = color;
         this.filled = filled;
     }
@@ -26,7 +26,7 @@ public abstract class Shape {
         return filled;
     }
 
-    public void setFilled(boolean filled) {
+    public void setFilled(Boolean filled) {
         this.filled = filled;
     }
 
@@ -36,7 +36,7 @@ public abstract class Shape {
         return "A shape with color of " + this.color + " And " + checkFilled;
     }
 
-    public abstract Double getArea() throws InvalidInputException;;
+    public abstract Double getArea();
 
-    public abstract Double getPerimeter() throws InvalidInputException;;
+    public abstract Double getPerimeter() ;
 }

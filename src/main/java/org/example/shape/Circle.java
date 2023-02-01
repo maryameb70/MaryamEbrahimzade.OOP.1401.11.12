@@ -1,17 +1,17 @@
 package org.example.shape;
 
 public class Circle extends Shape {
-    private double radius;
+    private Double radius;
 
     public Circle() {
         this.radius = 1.0d;
     }
 
-    public Circle(double radius) {
+    public Circle(Double radius) {
         this.radius = radius;
     }
 
-    public Circle(String color, boolean filled, double radius) {
+    public Circle(String color, Boolean filled, Double radius) {
         super(color, filled);
         this.radius = radius;
     }
@@ -20,7 +20,7 @@ public class Circle extends Shape {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(Double radius) {
         this.radius = radius;
     }
     @Override

@@ -6,7 +6,7 @@ import org.example.shape.Shape;
 import org.example.shape.Square;
 import org.example.shape.InvalidInputException;
 public class Main {
-    public static void main(String[] args)throws InvalidInputException {
+    public static void main(String[] args) {
         //practice1
         System.out.println("---Initialization with default constructor---");
         Shape shape = new Shape() {
@@ -30,7 +30,7 @@ public class Main {
         System.out.println(shape);
 
         System.out.println("---Initialization without default constructor---");
-        Shape shape2 = new Shape("Black", true) {
+        shape = new Shape("Black", true) {
             @Override
             public Double getArea() {
                 return null;
@@ -40,7 +40,7 @@ public class Main {
                 return null;
             }
         };
-        System.out.println(shape2);
+        System.out.println(shape);
 
         //practice2
         System.out.println("--------------------calculate area and perimeter --------------------");
@@ -67,7 +67,7 @@ public class Main {
         System.out.println("Area:" +square.getArea());
         System.out.println("perimeter:"+square.getPerimeter());
         System.out.println("-----Square/Without default constructor-----");
-        Shape square1 = new Square(5.0d,5.0d);
+        Shape square1 = new Square(5.0d);
         System.out.println("Area:"+square1.getArea());
         System.out.println("perimeter:"+square1.getPerimeter());
 
